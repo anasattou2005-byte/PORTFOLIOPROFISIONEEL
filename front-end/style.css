@@ -390,6 +390,87 @@ hr {
 
 
 
+.skills {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.skills h1 {
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.skill {
+  text-align: left;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.info span{
+    font-weight : 600 ;
+}
+.sp{
+    color: var(--hover-text);
+}
+.paras p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    opacity: 50%;
+    line-height: 30px;
+    font-weight: 550;
+}
+.bar {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+.progress {
+  height: 8px;
+  background: var(--hover-text);
+  border-radius: 5px;
+  position: relative;
+}
+.progress::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-color: var(--hover-text);
+    border-radius: 50%;
+    border: 3px solid  black;
+    box-shadow:0 0 5px rgba(0,0 , 0, 0.3) ;
+}
+
+/* percentages */
+.php { width: 85%; }
+.js { width: 75%; }
+.html { width: 75%; }
+.react { width: 75%; }
+.laravel { width: 50%; }
+.wordpress { width: 50%; }
+
 
 
 
