@@ -8,6 +8,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     transition: 0.3s;
+   
 
     
 }
@@ -21,7 +22,10 @@ body {
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
-        "wdth" 100;
+    "wdth" 100;
+    scroll-behavior: "Poppins" smooth;
+    scroll-behavior: smooth;
+
 }
 
 :root {
@@ -756,11 +760,19 @@ body.dark .textt p{
 body.dark .icons1 a ion-icon{
 color: white;
 }
+body.dark .icons1 a ion-icon:hover{
+color: var(--hover-text);
+}
 
 
 body.dark .btn-cv a{
     color: white;
 }
+
+body.dark .btn-cv a:hover{
+    color: var(--hover-text);
+}
+
 
 body.dark .tetel p{
     color: var(--hover-text);
@@ -818,10 +830,13 @@ body.dark .forrrm label{
 }
 body.dark .forrrm input ,body.dark textarea {
     background-color: #555;
+    color: white;
+    border: white 2px solid;
 }
 body.dark .chan button{
     background-color: #555;
     color: white;
+    border: white 2px solid;
     
 }
 body.dark .chan button:hover{
