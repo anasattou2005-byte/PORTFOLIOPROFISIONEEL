@@ -7,7 +7,9 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: 0.3s;
 
+    
 }
 
 
@@ -131,7 +133,7 @@ hr {
 }
 
 .home .aboute-me .text4 {
-    color: transparent;
+    color: white;
     -webkit-text-stroke: 2px #111;
     font-weight: 900;
 }
@@ -688,4 +690,142 @@ footer .tex {
 footer span {
     color: var(--hover-text);
     font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* dark moood */
+
+body.dark{
+     /* background-image: url("https://t3.ftcdn.net/jpg/03/77/34/50/240_F_377345078_yMd6eINlkVNcu9XYn3CMAyZgdu3lEMq3.jpg");  */
+     background-image: url("https://t4.ftcdn.net/jpg/02/22/28/45/240_F_222284519_5phlF1rfQm3WTHTxsMadVXdrIQx1DzW9.jpg"); 
+}
+#btn{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+body.dark header a{
+    color: white;
+}
+
+body.dark header a:hover{
+    color: var(--hover-text);
+}
+
+body.dark header h4 , body.dark .tex{
+    color: white;
+}
+
+body.dark hr{
+    background-color: white;
+}
+body.dark .text2{
+    color: white;
+}
+body.dark .text3{ 
+    
+    -webkit-text-stroke: 2px white;
+}
+body.dark .text4{ 
+    -webkit-text-stroke: 2px rgb(255, 255, 255); 
+}
+
+body.dark .aboute-me .text5{
+    color: white;
+}
+body.dark .text6{
+    color: white;
+}
+body.dark p{
+    color: white;
+}
+body.dark .textt p{
+    color: black;
+}
+body.dark .icons1 a ion-icon{
+color: white;
+}
+
+
+body.dark .btn-cv a{
+    color: white;
+}
+
+body.dark .tetel p{
+    color: var(--hover-text);
+}
+body.dark .tetel h1 , body.dark .tetel span{
+    color: white;
+}
+body.dark .my-services .card {
+
+    background-color: #222;
+    box-shadow: 0 18px 40px rgba(199, 203, 211, 0.08);
+    transition: 0.7s;
+}
+body.dark .my-services .card:hover {
+    background-color: var(--hover-text);
+    box-shadow: 0 18px 40px rgba(255, 255, 255, 0.08);
+}
+body.dark .my-services .card:hover h2{
+    color: #000000;
+    font-weight: 600;
+}
+body.dark .my-services .card:hover h4{
+    color: #000000;
+    font-weight: 600;
+
+}
+body.dark .my-services .card:hover p{
+    color: #000000;
+    opacity: 50%;
+    font-weight: 600;
+
+}
+
+body.dark .my-services .card p{
+    color: white;
+
+}
+body.dark .my-services .card h2{
+    color: white;
+}
+body.dark .my-services .card h4{
+    color: white;
+
+}
+
+body.dark .info{
+    color: white;
+}
+body.dark .sp{
+    color: var(--hover-text);
+}
+body.dark .forrrm label{
+    color: white;
+
+}
+body.dark .forrrm input ,body.dark textarea {
+    background-color: #555;
+}
+body.dark .chan button{
+    background-color: #555;
+    color: white;
+    
+}
+body.dark .chan button:hover{
+    background-color: var(--hover-text);
+    color: white;
+
 }
