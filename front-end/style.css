@@ -203,6 +203,7 @@ hr {
 }
 
 .btn-cv button {
+   position: relative;
     margin-top: 25px;
     padding: 15px 30px;
     border: 2px solid #111;
@@ -211,7 +212,16 @@ hr {
     font-weight: 600;
     box-shadow: 4px 4px 0px #b0aaaa;
 }
-
+.btn-cv button::after {
+    content: "";
+    position: absolute;
+    right: 0; /* هنا تبدلات */
+    top: 50%;
+    transform: translate(100%, -50%); 
+    width: 40px;
+    height: 2px;
+    background-color: black;
+}
 .btn-cv button:hover {
     transform: translate(4px, 4px);
     box-shadow: 0Px 0px 0px #111;
@@ -219,15 +229,15 @@ hr {
     color: #eee;
 }
 
-.btn-cv a {
+.mys {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    margin-left: 20px;
+    margin-left: 50px;
     transition: 0.3s;
 }
 
-.btn-cv a:hover {
+.mys:hover {
     color: var(--hover-text);
 
 }
@@ -765,14 +775,26 @@ color: var(--hover-text);
 }
 
 
-body.dark .btn-cv a{
+body.dark .mys{
     color: white;
 }
 
-body.dark .btn-cv a:hover{
+body.dark .mys:hover{
     color: var(--hover-text);
 }
-
+body.dark .btn-cv button{
+    border: 2px solid #4b4949;
+}
+body.dark .btn-cv button::after {
+    content: "";
+    position: absolute;
+    right: 0; /* هنا تبدلات */
+    top: 50%;
+    transform: translate(100%, -50%); 
+    width: 40px;
+    height: 2px;
+    background-color:#4b4949;
+}
 
 body.dark .tetel p{
     color: var(--hover-text);
