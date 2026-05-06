@@ -8,9 +8,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     transition: 0.3s;
-   
-
-    
 }
 
 
@@ -22,7 +19,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
-    "wdth" 100;
+        "wdth" 100;
     scroll-behavior: "Poppins" smooth;
     scroll-behavior: smooth;
 
@@ -203,7 +200,7 @@ hr {
 }
 
 .btn-cv button {
-   position: relative;
+    position: relative;
     margin-top: 25px;
     padding: 15px 30px;
     border: 2px solid #111;
@@ -212,16 +209,19 @@ hr {
     font-weight: 600;
     box-shadow: 4px 4px 0px #b0aaaa;
 }
+
 .btn-cv button::after {
     content: "";
     position: absolute;
-    right: 0; /* هنا تبدلات */
+    right: 0;
+    /* هنا تبدلات */
     top: 50%;
-    transform: translate(100%, -50%); 
+    transform: translate(100%, -50%);
     width: 40px;
     height: 2px;
     background-color: black;
 }
+
 .btn-cv button:hover {
     transform: translate(4px, 4px);
     box-shadow: 0Px 0px 0px #111;
@@ -586,11 +586,11 @@ hr {
     color: #777;
     position: relative;
     font-size: 1.5rem;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1) 
-    , inset 0pX 2px 5px rgba(255, 255, 255, 0.6) ;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1), inset 0pX 2px 5px rgba(255, 255, 255, 0.6);
     /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
 }
-.iconn ion-icon{
+
+.iconn ion-icon {
     position: relative;
     bottom: -2.5px;
 }
@@ -606,75 +606,83 @@ hr {
 
 .text {
     margin-left: 60px;
-  
+
 }
 
 .text h3 {
     font-family: cursive;
     margin: 0;
     color: #555;
-      font-weight: 800;
+    font-weight: 800;
 }
 
-.text p{
+.text p {
     margin: 5px 0 0;
     color: #888;
 }
+
 .text p a {
     text-decoration: none;
     color: var(--hover-text);
 }
-.forrrm{
+
+.forrrm {
     margin-bottom: 50px;
 }
 
-.name-email{
- display: flex;
+.name-email {
+    display: flex;
     flex-direction: row;
- 
+
 }
 
-.chan{
+.chan {
     display: flex;
     flex-direction: column;
     margin: 13px 0;
 }
-.chan label{
+
+.chan label {
     margin-bottom: 10px;
     text-transform: capitalize;
     font-weight: 550;
     margin-left: 4px;
 }
 
-.chan input , textarea{
+.chan input,
+textarea {
     width: 527px;
-    padding: 15px 20px ;
+    padding: 15px 20px;
     border-radius: 40Px;
     /* border: 1px solid #ddd; */
-     border: 2px solid #000000;
+    border: 2px solid #000000;
     outline: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
     resize: none;
 }
-.chan input:focus , textarea:focus{
+
+.chan input:focus,
+textarea:focus {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-    border-color:#000000 ;
+    border-color: #000000;
 }
-.chan button{
+
+.chan button {
     padding: 12px 30px;
     border-radius: 30px;
     /* border: none; */
-     border: 2px solid #000000;
+    border: 2px solid #000000;
     background-color: white;
     font-weight: 600;
     cursor: pointer;
-     box-shadow: 4px 4px 0px #b0aaaa;
+    box-shadow: 4px 4px 0px #b0aaaa;
     transition: 0.3s;
     margin-top: 17px;
 }
-.chan button:hover{
-   transform: translate(4px, 4px);
+
+.chan button:hover {
+    transform: translate(4px, 4px);
     box-shadow: 0Px 0px 0px #111;
     background-color: #00b894;
     color: #eee;
@@ -711,6 +719,86 @@ footer span {
 
 
 
+/* my progect */
+
+.my-prject {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 90px;
+}
+
+.card-prj {
+
+
+    width: 450px;
+    height: 550px;
+    background-color: #eee;
+    border-radius: 15px;
+    box-shadow: 0 18px 40px rgba(20, 33, 61, 0.08);
+}
+
+.card-img img {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 420px;
+    height: auto;
+    border-radius: 10px;
+    transition: 0.3s;
+
+}
+
+.card-img a img:hover {
+    transform: scale(1.03);
+}
+
+.card-tete {
+    margin: 0 30px;
+}
+
+.card-tete h4 {
+    color: var(--hover-text);
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
+.card-tete h2 {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.card-tete p {
+    font-weight: 500;
+    opacity: 50%;
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -719,150 +807,192 @@ footer span {
 
 /* dark moood */
 
-body.dark{
-     /* background-image: url("https://t3.ftcdn.net/jpg/03/77/34/50/240_F_377345078_yMd6eINlkVNcu9XYn3CMAyZgdu3lEMq3.jpg");  */
-     background-image: url("https://t4.ftcdn.net/jpg/02/22/28/45/240_F_222284519_5phlF1rfQm3WTHTxsMadVXdrIQx1DzW9.jpg"); 
+body.dark {
+    /* background-image: url("https://t3.ftcdn.net/jpg/03/77/34/50/240_F_377345078_yMd6eINlkVNcu9XYn3CMAyZgdu3lEMq3.jpg");  */
+    background-image: url("https://t4.ftcdn.net/jpg/02/22/28/45/240_F_222284519_5phlF1rfQm3WTHTxsMadVXdrIQx1DzW9.jpg");
 }
-#btn{
+
+#btn {
     border: none;
     background: transparent;
     cursor: pointer;
     font-size: 1.5rem;
 }
-body.dark header a{
+
+body.dark header a {
     color: white;
 }
 
-body.dark header a:hover{
+body.dark header a:hover {
     color: var(--hover-text);
 }
 
-body.dark header h4 , body.dark .tex{
+body.dark header h4,
+body.dark .tex {
     color: white;
 }
 
-body.dark hr{
+body.dark hr {
     background-color: white;
 }
-body.dark .text2{
+
+body.dark .text2 {
     color: white;
 }
-body.dark .text3{ 
-    
+
+body.dark .text3 {
+
     -webkit-text-stroke: 2px white;
 }
-body.dark .text4{ 
-    -webkit-text-stroke: 2px rgb(255, 255, 255); 
+
+body.dark .text4 {
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
 }
 
-body.dark .aboute-me .text5{
+body.dark .aboute-me .text5 {
     color: white;
 }
-body.dark .text6{
+
+body.dark .text6 {
     color: white;
 }
-body.dark p{
+
+body.dark p {
     color: white;
 }
-body.dark .textt p{
+
+body.dark .textt p {
     color: black;
 }
-body.dark .icons1 a ion-icon{
-color: white;
-}
-body.dark .icons1 a ion-icon:hover{
-color: var(--hover-text);
-}
 
-
-body.dark .mys{
+body.dark .icons1 a ion-icon {
     color: white;
 }
 
-body.dark .mys:hover{
+body.dark .icons1 a ion-icon:hover {
     color: var(--hover-text);
 }
-body.dark .btn-cv button{
+
+
+body.dark .mys {
+    color: white;
+}
+
+body.dark .mys:hover {
+    color: var(--hover-text);
+}
+
+body.dark .btn-cv button {
     border: 2px solid #4b4949;
 }
+
 body.dark .btn-cv button::after {
     content: "";
     position: absolute;
-    right: 0; /* هنا تبدلات */
+    right: 0;
+    /* هنا تبدلات */
     top: 50%;
-    transform: translate(100%, -50%); 
+    transform: translate(100%, -50%);
     width: 40px;
     height: 2px;
-    background-color:#4b4949;
+    background-color: #4b4949;
 }
 
-body.dark .tetel p{
+body.dark .tetel p {
     color: var(--hover-text);
 }
-body.dark .tetel h1 , body.dark .tetel span{
+
+body.dark .tetel h1,
+body.dark .tetel span {
     color: white;
 }
-body.dark .my-services .card {
 
+body.dark .my-services .card {
     background-color: #222;
     box-shadow: 0 18px 40px rgba(199, 203, 211, 0.08);
     transition: 0.7s;
 }
+
 body.dark .my-services .card:hover {
     background-color: var(--hover-text);
     box-shadow: 0 18px 40px rgba(255, 255, 255, 0.08);
 }
-body.dark .my-services .card:hover h2{
+
+body.dark .my-services .card:hover h2 {
     color: #000000;
     font-weight: 600;
 }
-body.dark .my-services .card:hover h4{
+
+body.dark .my-services .card:hover h4 {
     color: #000000;
     font-weight: 600;
 
 }
-body.dark .my-services .card:hover p{
+
+body.dark .my-services .card:hover p {
     color: #000000;
     opacity: 50%;
     font-weight: 600;
 
 }
 
-body.dark .my-services .card p{
-    color: white;
-
-}
-body.dark .my-services .card h2{
-    color: white;
-}
-body.dark .my-services .card h4{
+body.dark .my-services .card p {
     color: white;
 
 }
 
-body.dark .info{
+body.dark .my-services .card h2 {
     color: white;
 }
-body.dark .sp{
+
+body.dark .my-services .card h4 {
+    color: white;
+
+}
+
+body.dark .info {
+    color: white;
+}
+
+body.dark .sp {
     color: var(--hover-text);
 }
-body.dark .forrrm label{
+
+body.dark .forrrm label {
     color: white;
 
 }
-body.dark .forrrm input ,body.dark textarea {
+
+body.dark .forrrm input,
+body.dark textarea {
     background-color: #555;
     color: white;
     border: white 2px solid;
 }
-body.dark .chan button{
+
+body.dark .chan button {
     background-color: #555;
     color: white;
     border: white 2px solid;
-    
+
 }
-body.dark .chan button:hover{
+
+body.dark .chan button:hover {
     background-color: var(--hover-text);
     color: white;
 
+}
+
+
+
+/* dark works */
+
+body.dark .card-prj {
+    background-color: #222;
+    box-shadow: 0 18px 40px rgba(199, 203, 211, 0.08);
+    transition: 0.7s;
+}
+
+body.dark .card-tete h2 {
+    color: white;
 }
