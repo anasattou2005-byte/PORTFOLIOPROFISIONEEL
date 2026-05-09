@@ -8,6 +8,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     transition: 0.3s;
+    overflow-x: hidden;
 }
 
 
@@ -74,6 +75,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
     /* position: fixed;
@@ -83,13 +86,19 @@ header {
     z-index: 1000; */
 }
 
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
 header a {
-    margin-left: 9px;
-    margin-right: 9px;
     color: black;
     text-decoration: none;
     font-weight: 650;
-    font-size: 1.2;
+    font-size: 1.2rem;
     transition: 0.3s;
 }
 
@@ -106,12 +115,14 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 50px;
+    padding: 40px 6%;
     margin-top: 20px;
 }
 
 .aboute-me {
-    /* position: relative;
-    top: -50px; */
+    flex: 1 1 480px;
+    min-width: 0;
 }
 
 .home .aboute-me .text1 {
@@ -162,7 +173,8 @@ hr {
 }
 
 .home .aboute-me p {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     margin-top: 20px;
     opacity: 45%;
     line-height: 27px;
@@ -210,6 +222,13 @@ hr {
     box-shadow: 4px 4px 0px #b0aaaa;
 }
 
+.btn-cv {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .btn-cv button::after {
     content: "";
     position: absolute;
@@ -233,7 +252,6 @@ hr {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    margin-left: 50px;
     transition: 0.3s;
 }
 
@@ -243,11 +261,19 @@ hr {
 }
 
 .image img {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 0 10px var(--hover-text), 0 0 20px #00ffcc;
     transition: 0.3s;
+}
+
+.image {
+    position: relative;
+    flex: 0 1 380px;
+    display: flex;
+    justify-content: center;
 }
 
 .image img:hover {
@@ -257,7 +283,6 @@ hr {
 
 .badge {
     position: absolute;
-    top: 595px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -269,14 +294,13 @@ hr {
 }
 
 .badge.left {
-    margin-left: 200px;
-    /* position: relative;
-    top:-40px; */
+    left: -20px;
+    bottom: 28px;
 }
 
 .badge.right {
-    /* position: relative;
-   top: -30px; */
+    right: -20px;
+    top: 28px;
 }
 
 .number {
@@ -288,17 +312,19 @@ hr {
 
 .my-services {
     margin-top: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 32px;
+    padding: 0 6%;
 }
 
 .my-services .card {
-    width: 350px;
-    height: 300px;
+    width: 100%;
+    min-height: 300px;
     background-color: #eee;
     border-radius: 15px;
+    box-sizing: border-box;
 }
 
 .card {
@@ -410,7 +436,7 @@ hr {
 
 
 .skills {
-    width: 80%;
+    width: min(80%, 1200px);
     margin: auto;
     text-align: center;
     margin-top: 100px;
@@ -565,6 +591,8 @@ hr {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
+    gap: 40px;
+    padding: 0 6%;
     margin-top: 100px;
 }
 
@@ -628,11 +656,13 @@ hr {
 
 .forrrm {
     margin-bottom: 50px;
+    width: min(100%, 560px);
 }
 
 .name-email {
     display: flex;
     flex-direction: row;
+    gap: 20px;
 
 }
 
@@ -640,6 +670,7 @@ hr {
     display: flex;
     flex-direction: column;
     margin: 13px 0;
+    flex: 1 1 0;
 }
 
 .chan label {
@@ -651,7 +682,7 @@ hr {
 
 .chan input,
 textarea {
-    width: 527px;
+    width: 100%;
     padding: 15px 20px;
     border-radius: 40Px;
     /* border: 1px solid #ddd; */
@@ -660,6 +691,11 @@ textarea {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
     resize: none;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 120px;
 }
 
 .chan input:focus,
@@ -699,6 +735,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
     padding: 40px 0px;
 
 
@@ -722,27 +761,29 @@ footer span {
 /* my progect */
 
 .my-prject {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+    gap: 32px;
     margin-top: 90px;
+    padding: 0 6%;
 }
 
 .card-prj {
 
 
-    width: 450px;
-    height: 550px;
+    width: 100%;
+    min-height: 550px;
     background-color: #eee;
     border-radius: 15px;
     box-shadow: 0 18px 40px rgba(20, 33, 61, 0.08);
+    box-sizing: border-box;
 }
 
 .card-img img {
     margin-top: 10px;
     margin-left: 15px;
-    width: 420px;
+    width: calc(100% - 30px);
     height: auto;
     border-radius: 10px;
     transition: 0.3s;
@@ -995,4 +1036,177 @@ body.dark .card-prj {
 
 body.dark .card-tete h2 {
     color: white;
+}
+
+
+
+
+
+@media (max-width: 1100px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home .aboute-me p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icons1,
+    .btn-cv {
+        justify-content: center;
+    }
+
+    .container-contact {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .informa {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .item {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .tetel {
+        margin-top: 100px;
+        padding: 0 20px;
+    }
+
+    .tetel h1 {
+        font-size: 38px;
+    }
+
+    .big-tetel {
+        font-size: clamp(56px, 14vw, 90px);
+    }
+
+    .skills {
+        width: min(88%, 1200px);
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin-top: 70px;
+    }
+
+    .my-services,
+    .my-prject {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .badge.left {
+        left: 0;
+    }
+
+    .badge.right {
+        right: 0;
+    }
+
+    .card-prj {
+        min-height: auto;
+        padding-bottom: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    header {
+        padding: 24px 20px;
+        justify-content: center;
+    }
+
+    .nav-links {
+        gap: 10px 14px;
+    }
+
+    header a {
+        font-size: 0.95rem;
+    }
+
+    .home {
+        padding: 32px 20px;
+        gap: 36px;
+    }
+
+    .home .aboute-me .text6 {
+        display: inline-block;
+        margin-left: 8px;
+    }
+
+    .btn-cv button::after,
+    .iconn::after {
+        display: none;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        max-width: min(100%, 320px);
+    }
+
+    .badge {
+        position: static;
+        margin-top: 16px;
+        justify-content: center;
+    }
+
+    .image {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .my-services {
+        margin-top: 90px;
+        gap: 24px;
+    }
+
+    .my-services,
+    .my-prject {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .informa {
+        grid-template-columns: 1fr;
+    }
+
+    .text {
+        margin-left: 24px;
+    }
+
+    .name-email {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card-prj {
+        width: 100%;
+    }
+
+    .card-tete {
+        margin: 0 20px;
+    }
+
+    footer {
+        padding: 28px 20px;
+    }
 }

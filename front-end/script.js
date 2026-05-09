@@ -35,13 +35,13 @@ btn.addEventListener("click", function () {
   if (document.body.classList.contains("dark")) {
     img1.src = "port-dark.png"; // dark
     img2.src = "para-dark.png"; // dark
-    img3.src = "port-dark.png"
+    img3.src = "cofe-dark.png"; // dark
     btn.innerHTML = "<ion-icon name='sunny-outline'></ion-icon>";
     btn.style.color = "white";
   } else {
     img1.src = "port.png"; // light
     img2.src = "para.png"; // light
-    img3.src = "port.png"; // light
+    img3.src = "cofe.png"; // light
     btn.innerHTML = "<ion-icon name='moon-outline'></ion-icon>";
     btn.style.color = "black";
   }           
