@@ -832,11 +832,13 @@ footer span {
     gap: 32px;
     padding: 0 6%;
     margin-top: 90px;
+    align-items: stretch;
 }
 
 .card-story {
     position: relative;
     min-height: 320px;
+    height: 100%;
     padding: 32px 30px 30px;
     background: rgba(238, 238, 238, 0.92);
     border: 2px solid rgba(17, 17, 17, 0.08);
@@ -900,6 +902,7 @@ footer span {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.4;
+    min-height: 68px;
 }
 
 .card-story p {
@@ -1196,7 +1199,7 @@ body.dark .card-story:hover p {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 820px) {
     .tetel {
         margin-top: 100px;
         padding: 0 20px;
@@ -1239,7 +1242,7 @@ body.dark .card-story:hover p {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 620px) {
     header {
         padding: 24px 20px;
         justify-content: center;
@@ -1311,6 +1314,7 @@ body.dark .card-story:hover p {
     .card-story {
         min-height: auto;
         padding: 28px 22px 24px;
+        margin-bottom: 8px;
     }
 
     .card-story::before {
