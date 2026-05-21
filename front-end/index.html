@@ -358,7 +358,7 @@
                             </div>
                             <div class="text">
                                 <h3>EMAIL </h3>
-                                <p><a href="">anasattou2005@gmail.com</a></p>
+                                <p><a href="mailto:anasattou2005@gmail.com?subject=Contact&body=Hello Anas">anasattou2005@gmail.com</a></p>
                             </div>
                         </div>
                         <div class="item">
@@ -367,7 +367,7 @@
                             </div>
                             <div class="text">
                                 <h3>PHONE</h3>
-                                <p><a href="">+212708766254</a></p>
+                                <p><a href="https://wa.me/212708766254?text=Hello%20Anas" target="_blank">+212708766254</a></p>
                             </div>
                         </div>
 
@@ -377,27 +377,25 @@
 
 
 
-
-
-                    <form action="" class="forrrm">
+                    <form action="/portfolio/back-end/inndex.php" class="forrrm" method="post">
                         <div class="name-email">
                             <div class="chan">
                                 <label for="">name</label>
-                                <input type="text">
+                                <input type="text" name="name" required>
                             </div>
                             <div class="chan">
                                 <label for="">email</label>
-                                <input type="email">
+                                <input type="email" name="email" required>
                             </div>
                         </div>
                         <div class="subject-message">
                             <div class="chan">
                                 <label for="">subject</label>
-                                <input type="text">
+                                <input type="text" name="subject" required>
                             </div>
                             <div class="chan">
                                 <label for="">message</label>
-                                <textarea name="" id=""></textarea>
+                                <textarea name="message" id="" required></textarea>
                             </div>
                             <div class="chan ">
                                 <button>SEND MESSAGE</button>
