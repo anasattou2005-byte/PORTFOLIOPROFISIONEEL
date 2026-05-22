@@ -3,7 +3,7 @@ window.addEventListener("load", function () {
   setTimeout(() => {
     document.getElementById("preloader").style.display = "none";
     document.getElementById("content").style.display = "block";
-  }, 1200); // الوقت ديال التحميل
+  }, 1000); // الوقت ديال التحميل
 });
 
 
@@ -46,3 +46,59 @@ btn.addEventListener("click", function () {
     btn.style.color = "black";
   }           
 });
+
+var contactForm = document.querySelector(".forrrm");
+var formMessage = document.getElementById("form-message");
+
+if (contactForm && formMessage) {
+  var isSubmitting = false;
+
+  window.addEventListener("message", function (event) {
+    if (!event.data || event.data.type !== "contact-result") {
+      return;
+    }
+
+    formMessage.textContent = event.data.message;
+    formMessage.style.color = event.data.status === "success" ? "green" : "red";
+
+    if (event.data.status === "success") {
+      contactForm.reset();
+    }
+  });
+
+  contactForm.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    if (isSubmitting) {
+      return;
+    }
+
+    isSubmitting = true;
+    formMessage.textContent = "Sending message...";
+    formMessage.style.color = "green";
+
+    try {
+      var response = await fetch(contactForm.action, {
+        method: contactForm.method,
+        body: new FormData(contactForm)
+      });
+
+      var responseText = await response.text();
+      var sentSuccessfully = response.ok && responseText.includes("status: 'success'");
+
+      if (sentSuccessfully) {
+        contactForm.reset();
+        formMessage.textContent = "Your message has been sent.";
+        formMessage.style.color = "green";
+      } else {
+        formMessage.textContent = "The message could not be sent.";
+        formMessage.style.color = "red";
+      }
+    } catch (error) {
+      formMessage.textContent = "The message could not be sent.";
+      formMessage.style.color = "red";
+    } finally {
+      isSubmitting = false;
+    }
+  });
+}

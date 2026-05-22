@@ -835,6 +835,12 @@ footer span {
     align-items: stretch;
 }
 
+#form-message {
+    margin-top: 16px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 .card-story {
     position: relative;
     min-height: 320px;

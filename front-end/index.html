@@ -377,7 +377,7 @@
 
 
 
-                    <form action="/portfolio/back-end/inndex.php" class="forrrm" method="post">
+                    <form action="http://localhost/portfolio/back-end/contact.php" class="forrrm" method="post" target="contact-frame">
                         <div class="name-email">
                             <div class="chan">
                                 <label for="">name</label>
@@ -398,10 +398,12 @@
                                 <textarea name="message" id="" required></textarea>
                             </div>
                             <div class="chan ">
-                                <button>SEND MESSAGE</button>
+                                <button onclick="" type="submit" name="send">SEND MESSAGE</button>
                             </div>
+                            <p id="form-message"></p>
                         </div>
                     </form>
+                    <iframe name="contact-frame" style="display: none;"></iframe>
 
 
 
